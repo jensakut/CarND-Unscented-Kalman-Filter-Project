@@ -3,7 +3,7 @@ Self-Driving Car Engineer Nanodegree Program
 
 In this project utilize an Unscented Kalman Filter to estimate the state of a moving object of interest with noisy lidar and radar measurements. Passing the project requires obtaining RMSE values that are lower that the tolerance outlined in the project rubric. 
 
-A manual how to use this project can be downloaded [here](https://github.com/jensakut/CarND-Catch-Run-Away-Car-UKF/blob/master/Project_rubric.md)
+A manual how to use this project can be downloaded [here](https://github.com/jensakut/CarND-Unscented-Kalman-Filter-Project/blob/master/Project_rubric.md)
 
 # Overview
 
@@ -12,8 +12,8 @@ The resulting mean squared errors are quite constant in the intervals 1...3 for 
 The following picture show the NIS precision distribution. An ideal Kalman-Filter shows only 5 percent of the samples above the red line, which value depends on the degrees of freedom of the measurement vector. 
 The radar measurements show an above-ideal distribution, which means the radar misses the predicted gaussian distribution a bit too often. This means the process noise is underestimated. 
 The laser measurements are significantly below the ideal, which means the process noise is actually overestimated. These results are contradictionary and point towards a slightly-off sensor variance estimation. Another possibility is that the sensors react differently to the two process noises. 
-![alt text](https://github.com/jensakut/CarND-Catch-Run-Away-Car-UKF/blob/master/Radar_NIS.png)
-![alt text](https://github.com/jensakut/CarND-Catch-Run-Away-Car-UKF/blob/master/Lidar_NIS.png)
+![alt text](https://github.com/jensakut/CarND-Unscented-Kalman-Filter-Project/blob/master/Radar_NIS.png)
+![alt text](https://github.com/jensakut/CarND-Unscented-Kalman-Filter-Project/blob/master/Radar_NIS.png)
 
 Nevertheless, the kalman-filter matches the required precision. 
 
