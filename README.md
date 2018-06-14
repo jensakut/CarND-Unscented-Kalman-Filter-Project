@@ -10,12 +10,11 @@ A manual how to use this project can be downloaded [here](https://github.com/jen
 Comparing to the extended linear Kalman Filter, the unscented Kalman Filter enables non-linear process models like the constant velocity magnitude model used in this exercise. Besides creating a UKF-tracking-class, the process noise parameters were tuned.  
 The resulting mean squared errors are quite constant in the intervals 1...3 for the acceleration noise and 0.3 ... 0.7 for the angular acceleration noise. 
 The following picture show the NIS precision distribution. An ideal Kalman-Filter shows only 5 percent of the samples above the red line, which value depends on the degrees of freedom of the measurement vector. 
-The radar measurements show an above-ideal distribution, which means the radar misses the predicted gaussian distribution a bit too often. This means the process noise is underestimated. 
-The laser measurements are significantly below the ideal, which means the process noise is actually overestimated. These results are contradictionary and point towards a slightly-off sensor variance estimation. Another possibility is that the sensors react differently to the two process noises. 
+Both radar measurements and Lidar measurements show good distribution.
 ![alt text](https://github.com/jensakut/CarND-Unscented-Kalman-Filter-Project/blob/master/Radar_NIS.png)
 ![alt text](https://github.com/jensakut/CarND-Unscented-Kalman-Filter-Project/blob/master/Radar_NIS.png)
 
-Nevertheless, the kalman-filter matches the required precision. 
+The unscented kalman-filter beats the required precision. 
 
 
 ## Other Important Dependencies
